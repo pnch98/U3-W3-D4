@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { ArticleType } from "../interfaces/ArticleType";
 import { Container } from "react-bootstrap";
 
@@ -34,8 +34,8 @@ const Details = () => {
             <h1 className="mb-0">{article.title}</h1>
             <small>{article.published_at}</small>
           </div>
-          <div className="text-center mb-5" style={{ maxHeight: "auto", maxWidth: "1600px" }}>
-            <img src={article.image_url} alt="cover" className="w-100" />
+          <div className="text-center mb-5" style={{ maxHeight: "1000px", maxWidth: "1600px" }}>
+            <img src={article.image_url} alt="cover" className="img-fluid" />
           </div>
           <p>{article.summary}</p>
         </>

@@ -34,7 +34,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Container>
+    <Container className="py-3">
       <Row className="gy-3">
         <h1 className="text-center">Articles</h1>
 
